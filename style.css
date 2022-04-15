@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-body);
+}
+
+:root {
+    --bg-body: #131416;
+    --color-font: #ffff;
+    --color-button: #0772eb;
+    --color-card: #1e212c;
+}
+
+/* Header */
+
+.container {
+    max-width: 830px;
+    margin: auto;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    
+}
+
+.logo h2 {
+    color: var(--color-font);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+/* Section-1 */
+
+.section-1 {
+    display: flex;
+    max-width: 830px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.action-title h2 {
+    font-size: 40px;
+    color: var(--color-font);
+}
+
+.section-button-1 {
+    background-color: var(--color-button);
+    display: inline-block;
+    padding: 15px 70px;
+    border-radius: 50px;
+    color: var(--color-font);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-button-1:hover {
+    background-color: #0065d8;
+    color: white;
+}
+
+.ebook img {
+    width: 230px;
+    height: auto;
+    margin-right: 50px;
+}
+
+/* Section-2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+    margin: auto;
+    padding-bottom: 70px;
+    
+}
+
+.section-2 h2 {
+    color: var(--color-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-card);
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    color: var(--color-font);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Section-3 */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.section-3 h2 {
+    font-size: 60px;
+    color: #0772eb;
+    margin-bottom: 20px;
+}
+
+.section-3 p {
+    color: var(--color-font);
+    margin-bottom: 50px;
+    margin-left: -25px;
+}
+
+.section-button-2 {
+    display: inline-block;
+    color: var(--color-font);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 50px;
+    
+}
+
+.section-button-2:hover {
+    background-color: #0c0d13;
+    color: var(--color-font);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.footer-button-3 {
+    display: inline-block;
+    background-color: var(--color-button);
+    color: var(--color-font);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-button-3:hover {
+    background-color: #0065d8;
+    color: var(--color-font);
+}
+
+footer p {
+    margin-top: 50px;
+    color: var(--color-font);
+    font-size: 15px;
+}
+
+/* Resposive */
+
+@media screen and (max-width: 576px) {
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ebook img {
+       margin-right: 0;
+    }
+
+    .action-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .action-title h2 {
+        padding: 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-3 h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .section-3 p {
+        font-size: 14px;
+    }
+
+    .section-button-1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .section-button-2 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .footer-button-3 {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }  
+    
+}
+
