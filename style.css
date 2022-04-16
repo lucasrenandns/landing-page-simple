@@ -202,7 +202,7 @@ footer p {
 
 /* Resposive */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .section-1 {
         display: flex;
         flex-direction: column;
