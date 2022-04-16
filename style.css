@@ -48,6 +48,7 @@ header .logo {
     max-width: 830px;
     margin: auto;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .action-title h2 {
@@ -199,6 +200,7 @@ footer p {
     margin-top: 50px;
     color: var(--color-font);
     font-size: 15px;
+    text-align: center;
 }
 
 /* Resposive */
@@ -208,11 +210,13 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .ebook img {
         max-width: 290px;
         margin-right: 0px;
+        padding-right: 28px;
     }
 
     .action-title {
@@ -267,5 +271,12 @@ footer p {
         text-align: center;
     }  
     
+}
+
+@media screen and (max-width: 992px) {
+    .ebook img {
+        max-width: 290px;
+        margin-left: 25px;
+    }
 }
 
